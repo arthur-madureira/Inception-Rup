@@ -46,9 +46,7 @@ As seções seguintes apresentam o posicionamento do produto, os stakeholders e 
 
 ### 2.1 Oportunidade de Negócio
 
-<!-- Descrever a oportunidade de negócio que motiva o projeto -->
-
-Um órgão do estado necessita digitalizar e unificar o processo de gestão de editais públicos de financiamento de projetos esportivos e culturais, atualmente realizado de forma fragmentada.
+Atualmente, o processo de gerenciar editais públicos de financiamento de projetos esportivos e culturais é realizado de forma fragmentada, com uso de planilhas, e-mails e sistemas desconectados, dificultando a transparência, o acompanhamento e a auditoria. O projeto atual se propõe a desenvolver uma plataforma digital para gerenciar esses editais.
 
 ### 2.2 Declaração do Problema
 
@@ -63,13 +61,12 @@ Um órgão do estado necessita digitalizar e unificar o processo de gestão de e
 
 | Campo | Descrição |
 |-------|-----------|
-| **Para** | Órgãos públicos que gerenciam editais de financiamento |
-| **Que** | Necessitam de transparência e eficiência na gestão de editais |
-| **O** | Plataforma de Gestão de Editais Públicos |
-| **É um(a)** | Sistema digital integrado de gestão |
-| **Que** | Apoia todo o ciclo de vida dos editais e projetos financiados |
-| **Ao contrário de** | Processos manuais fragmentados (planilhas, e-mails, sistemas desconectados) |
-| **Nosso produto** | Unifica e digitaliza todo o processo, garantindo transparência, rastreabilidade e auditoria |
+| **Para (For)** | Órgãos públicos que gerenciam editais de financiamento |
+| **Que (Who)** | Necessitam de transparência e eficiência na gestão de editais |
+| **O (The)** | Plataforma de Gestão de Editais Públicos |
+| **Que (That)** | Apoia todo o ciclo de vida dos editais e projetos financiados |
+| **Ao contrário de (Unlike)** | Processos manuais fragmentados (planilhas, e-mails, sistemas desconectados) |
+| **Nosso produto (Our)** | Unifica e digitaliza todo o processo, garantindo transparência, rastreabilidade e auditoria |
 
 ---
 
@@ -77,16 +74,16 @@ Um órgão do estado necessita digitalizar e unificar o processo de gestão de e
 
 ### 3.1 Demográficos do Mercado
 
-<!-- Descrever o contexto do mercado público de editais de financiamento -->
+O processo que envolve a gestão dos editais tem a imagem de burocrático e proponentes relatam dificuldade no acompanhamento e a auditoria no ciclo de vida do edital. A aspiração é ser referência em transparência e eficiência na gestão de editais, citado como modelo por outros entes. A plataforma sustenta essa transição ao digitalizar e unificar todo o fluxo, garantindo rastreabilidade, prazos automáticos e divulgação digital de resultados — eliminando a fragmentação que alimenta a imagem atual e viabilizando a reputação desejada.
 
 ### 3.2 Resumo dos Stakeholders
 
 | Nome | Descrição | Responsabilidades |
 |------|-----------|-------------------|
-| Órgão financiador | Entidade governamental que publica editais | Definir políticas, aprovar editais, alocar orçamento |
-| Gestor do edital | Servidor público responsável pelo edital | Criar, configurar e gerenciar editais |
+| Órgão financiador | Entidade governamental que publica editais | Definir políticas, alocar orçamento |
+| Gestor do edital | Servidor público responsável pelo edital | Criar, configurar e gerenciar editais | 
 | Proponente de projeto | Pessoa/entidade que submete propostas | Submeter propostas, prestar contas |
-| Avaliador da proposta | Especialista que avalia propostas | Avaliar e classificar propostas |
+| Avaliador da proposta | Especialista que avalia propostas | Avaliar, classificar propostas e aprovar editais |
 | Analista de prestação de contas | Servidor que analisa a prestação de contas | Verificar conformidade, emitir parecer |
 
 ### 3.3 Resumo dos Usuários
