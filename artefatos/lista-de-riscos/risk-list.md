@@ -12,6 +12,7 @@
 | Data | Versão | Descrição | Autor |
 |------|--------|-----------|-------|
 | - | 1.0 | Versão inicial da Inception | - |
+| - | 1.1 | Versão inicial da Inception | Caio Trindade |
 
 ---
 
@@ -78,7 +79,7 @@ Reduzir escopo para funcionalidades essenciais (criar edital, submeter proposta,
 
 #### 2.2.1 Magnitude
 
-**Alta**
+**Médoa**
 
 #### 2.2.2 Descrição
 
@@ -98,11 +99,11 @@ O enunciado é intencionalmente incompleto e ambíguo, o que pode levar a interp
 
 #### 2.2.5 Estratégia de Mitigação
 
-Documentar todas as suposições e decisões de modelagem explicitamente. Validar interpretações com o professor e stakeholders. Manter o Glossário atualizado para alinhar vocabulário.
+Documentar todas as suposições e decisões de modelagem explicitamente. Validar interpretações com stakeholders. Manter o Glossário atualizado para alinhar vocabulário.
 
 #### 2.2.6 Plano de Contingência
 
-Realizar workshops de requisitos com stakeholders para esclarecer ambiguidades. Prototipar funcionalidades críticas para validar entendimento antes de implementar.
+Realizar workshops de requisitos com stakeholders para esclarecer ambiguidades, como por exemplo o funcionamento atual da integração entre ferramentas. Prototipar funcionalidades críticas para validar entendimento antes de implementar.
 
 ---
 
@@ -170,41 +171,9 @@ Contratar consultoria jurídica para revisar requisitos. Implementar módulo de 
 
 ---
 
-### 2.5 R05 - Baixa Adesão dos Usuários
+### 2.5 R05 - Falta de Integração com Sistemas Existentes
 
 #### 2.5.1 Magnitude
-
-**Média**
-
-#### 2.5.2 Descrição
-
-Usuários acostumados com processos manuais podem resistir à adoção da plataforma digital, especialmente proponentes com menor familiaridade tecnológica.
-
-#### 2.5.3 Impactos
-
-- Subutilização do sistema
-- Manutenção de processos paralelos (manuais e digitais)
-- Retorno ao processo anterior
-
-#### 2.5.4 Indicadores
-
-- Taxa de adoção por perfil de usuário
-- Número de suportes/help desk
-- Feedback de usabilidade
-
-#### 2.5.5 Estratégia de Mitigação
-
-Investir em usabilidade e experiência do usuário. Fornecer tutoriais e ajuda contextual. Realizar testes de usabilidade com usuários reais. Planejar programa de capacitação.
-
-#### 2.5.6 Plano de Contingência
-
-Desenvolver versão simplificada para usuários com menor familiaridade. Oferecer suporte presencial ou por telefone como canal alternativo.
-
----
-
-### 2.6 R06 - Falta de Integração com Sistemas Existentes
-
-#### 2.6.1 Magnitude
 
 **Baixa**
 
@@ -212,23 +181,23 @@ Desenvolver versão simplificada para usuários com menor familiaridade. Oferece
 
 O órgão pode possuir sistemas legados (financeiro, contábil, RH) com os quais a plataforma precisará se integrar, e a falta de APIs ou documentação pode dificultar essa integração.
 
-#### 2.6.3 Impactos
+#### 2.5.3 Impactos
 
 - Dados duplicados entre sistemas
 - Processos manuais de consolidação
 - Inconsistência de dados
 
-#### 2.6.4 Indicadores
+#### 2.5.4 Indicadores
 
 - Número de sistemas legados identificados
 - Disponibilidade de APIs ou interfaces de integração
 - Tempo gasto em atividades manuais de consolidação
 
-#### 2.6.5 Estratégia de Mitigação
+#### 2.5.5 Estratégia de Mitigação
 
 Mapear sistemas legados existentes na fase de Inception. Projetar a plataforma com arquitetura orientada a APIs desde o início. Priorizar integrações críticas.
 
-#### 2.6.6 Plano de Contingência
+#### 2.5.6 Plano de Contingência
 
 Implementar importação/exportação de dados em lote como alternativa à integração em tempo real. Adiar integrações não críticas.
 
@@ -242,5 +211,4 @@ Implementar importação/exportação de dados em lote como alternativa à integ
 | R02 | Requisitos ambíguos ou incompletos | Alta | Alta | Alto | 2 |
 | R03 | Equipe sem experiência prévia juntos | Média | Média | Médio | 3 |
 | R04 | Restrições regulatórias e legais | Média | Média | Alto | 4 |
-| R05 | Baixa adesão dos usuários | Média | Média | Médio | 5 |
-| R06 | Falta de integração com sistemas existentes | Baixa | Baixa | Médio | 6 |
+| R05 | Falta de integração com sistemas existentes | Baixa | Baixa | Médio | 5 |
