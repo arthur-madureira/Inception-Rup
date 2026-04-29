@@ -97,6 +97,11 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 
 ### 3.4 Ambiente do Usuário
 
+- O número de pessoas envolvidas, deve variar mediante ao edital, mas a média provável é de 6 pessoas.
+- A duração de um ciclo varia de acordo com o edital, mas em média é de 3 meses.
+- O sistema deve ter suporte para uso em plataformas mobile.
+- Atualmente, esse processo é realizado de forma fragmentada, com uso de planilhas, e-mails e sistemas desconectados.
+
 <!-- Descrever o ambiente de trabalho dos usuários: número de pessoas, ciclo de tarefas, plataformas, etc. -->
 
 ### 3.5 Perfis dos Stakeholders
@@ -147,6 +152,7 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 
 ### 3.6 Perfis dos Usuários
 
+- Mesmos dos Stakeholders
 <!-- Expandir perfis detalhados de cada tipo de usuário, seguindo a mesma estrutura dos stakeholders -->
 
 ### 3.7 Necessidades Chave dos Stakeholders e Usuários
@@ -170,7 +176,7 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 
 <!-- Descrever como o produto se relaciona com outros sistemas. Incluir diagrama de blocos se possível. -->
 
-A plataforma é um sistema autônomo que centraliza a gestão de editais públicos, substituindo processos fragmentados.
+O sistema é independente e contido em si próprio, tendo como objetivo exatamente centralizar o processo de gestão de editais.
 
 ### 4.2 Resumo das Capacidades
 
@@ -185,6 +191,8 @@ A plataforma é um sistema autônomo que centraliza a gestão de editais públic
 
 ### 4.3 Suposições e Dependências
 
+O sistema requer infraestrutura de servidor para ser hospedado e o usuário final necessita de acesso à internet para usá-lo.
+
 <!-- Listar fatores que podem afetar as funcionalidades -->
 
 ### 4.4 Custo e Precificação
@@ -192,10 +200,6 @@ A plataforma é um sistema autônomo que centraliza a gestão de editais públic
 - Orçamento máximo: R$ 300.000,00
 - Prazo máximo: 8 meses
 - Sem custos com espaço físico, máquinas ou licenças
-
-### 4.5 Licenciamento e Instalação
-
-<!-- Endereçar questões de licenciamento e instalação -->
 
 ---
 
@@ -222,21 +226,33 @@ A plataforma é um sistema autônomo que centraliza a gestão de editais públic
 
 ## 6. Restrições
 
-<!-- Listar restrições de design, externas ou outras dependências -->
+O sistema está sendo pensado e desenvolvido para uso exclusivo do órgão estadual, focado na gestão de editais especificamente das áreas culturais e esportivas, portanto, especificidades de outros tipos de editais não se aplicam.
 
-- Orçamento de no máximo R$ 300.000,00
-- Prazo de no máximo 8 meses
-- Time e infraestrutura começam do zero
+<!-- Listar restrições de design, externas ou outras dependências -->
 
 ---
 
 ## 7. Faixas de Qualidade
+
+Devido a natureza do trabalho realizado pelo órgão, o sistema deve permitir a gestão de múltiplos editais simultâneamente, por diferentes usuários, além de milhares de editais diferentes ao todo, em seu banco de dados.
 
 <!-- Definir faixas de qualidade para desempenho, robustez, usabilidade, etc. -->
 
 ---
 
 ## 8. Precedência e Prioridade
+
+1. Criação e configuração de editais
+2. Definição de critérios de avaliação
+3. Submissão e análise de recursos
+4. Submissão de propostas
+5. Avaliação e seleção
+6. Publicação de editais
+7. Encerramento de submissões
+8. Divulgação de resultados
+9. Acompanhamento da execução
+10. Prestação de contas
+11. Emissão de parecer final
 
 <!-- Definir prioridades das funcionalidades -->
 
