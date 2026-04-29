@@ -177,7 +177,7 @@ Contratar consultoria jurídica para revisar requisitos. Implementar módulo de 
 
 **Baixa**
 
-#### 2.6.2 Descrição
+#### 2.5.2 Descrição
 
 O órgão pode possuir sistemas legados (financeiro, contábil, RH) com os quais a plataforma precisará se integrar, e a falta de APIs ou documentação pode dificultar essa integração.
 
