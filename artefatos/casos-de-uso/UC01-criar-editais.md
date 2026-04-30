@@ -62,7 +62,31 @@ O Gestor do Edital cria um novo edital no sistema, definindo suas informações 
 
 ## 4. Subfluxos
 
-<!-- Definir subfluxos se necessário -->
+### 4.1 Configuração de Critérios de Avaliação
+
+O Gestor, após definir as informações básicas do edital:
+1. Acessa a seção "Critérios de Avaliação" no formulário.
+2. Para cada critério que deseja adicionar:
+   a. Informa o nome do critério (ex: "Viabilidade técnica", "Impacto social", "Orçamento adequado").
+   b. Define o peso do critério (0 a 100, a soma total entre todos os critérios deve ser 100).
+   c. Define a pontuação mínima e máxima para o critério (ex: 0 a 10).
+   d. Marca se o critério é obrigatório/eliminatório (se a proposta não atingir o mínimo nesse critério, é automaticamente reprovada).
+   e. Adiciona uma descrição detalhada do que será avaliado nesse critério.
+3. O sistema exibe a soma dos pesos em tempo real e alerta se a soma for diferente de 100.
+4. O Gestor pode reordenar os critérios arrastando-os (a ordem será exibida ao avaliador).
+5. O Gestor pode remover ou editar um critério já adicionado a qualquer momento antes da publicação.
+6. O Gestor confirma a configuração dos critérios e prossegue para a etapa seguinte do formulário.
+
+### 4.2 Upload de Documentos Complementares
+
+1. O Gestor acessa a seção "Documentos" no formulário.
+2. Para cada documento complementar (regulamento, formulários padrão, modelos):
+   a. Clica em "Adicionar documento".
+   b. Seleciona o arquivo no formato PDF, DOCX ou XLSX (até 25 MB por arquivo).
+   c. Informa um rótulo descritivo (ex: "Formulário de Submissão - Anexo I").
+   d. Marca se o documento é obrigatório para o proponente preencher e reenviar.
+3. O sistema exibe a lista de documentos anexados com nome, tamanho e status de upload.
+4. O Gestor pode remover ou substituir um documento antes da publicação.
 
 ---
 
@@ -115,4 +139,26 @@ O Gestor do Edital cria um novo edital no sistema, definindo suas informações 
 
 ## 10. Informações Adicionais
 
-<!-- Incluir diagramas ou exemplos, se necessário -->
+### 10.1 Diagrama de Atividade
+
+```mermaid
+flowchart TD
+    A([Início]) --> B[Gestor acessa criação de edital]
+    B --> C[Sistema exibe formulário]
+    C --> D[Gestor preenche informações básicas]
+    D --> E[Gestor define valores e prazos]
+    E --> F[Gestor configura critérios de avaliação]
+    F --> G[Gestor anexa documentos]
+    G --> H{Sistema valida dados}
+    H -->|Dados válidos| I[Sistema salva edital como Rascunho]
+    H -->|Campo obrigatório não preenchido| J[Exibe erro: campos pendentes]
+    J --> D
+    H -->|Dados inconsistentes| K[Exibe alerta de inconsistência]
+    K --> D
+    I --> L[Sistema exibe confirmação]
+    L --> M([Fim])
+
+    D -->|Salvar rascunho parcial| N[Sistema salva parcialmente]
+    N --> O[Exibe campos pendentes]
+    O --> M
+```

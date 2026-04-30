@@ -11,7 +11,7 @@
 
 | Data | Versão | Descrição | Autor |
 |------|--------|-----------|-------|
-| - | 1.0 | Versão inicial da Inception | - |
+| 29/04/2026 | 1.0 | Versão inicial da Inception | Grupo de Processos de Software |
 
 ---
 
@@ -74,7 +74,18 @@ Atualmente, o processo de gerenciar editais públicos de financiamento de projet
 
 ### 3.1 Demográficos do Mercado
 
-O processo que envolve a gestão dos editais tem a imagem de burocrático e proponentes relatam dificuldade no acompanhamento e a auditoria no ciclo de vida do edital. A aspiração é ser referência em transparência e eficiência na gestão de editais, citado como modelo por outros entes. A plataforma sustenta essa transição ao digitalizar e unificar todo o fluxo, garantindo rastreabilidade, prazos automáticos e divulgação digital de resultados — eliminando a fragmentação que alimenta a imagem atual e viabilizando a reputação desejada.
+#### Situação Atual
+O processo de gestão de editais públicos tem a imagem de burocrático e ineficiente. Proponentes relatam dificuldade no acompanhamento do status de suas propostas, e a auditoria do ciclo de vida do edital é comprometida pela fragmentação de ferramentas (planilhas, e-mails, sistemas paralelos). A falta de rastreabilidade digital gera retrabalho e desconfiança.
+
+#### Aspiração
+Ser referência em transparência e eficiência na gestão de editais públicos, citado como modelo por outros entes estaduais e federais. A meta é que, em 2 anos após a implantação, 100% dos editais do órgão tramitem exclusivamente pela plataforma, eliminando processos paralelos em papel e planilhas.
+
+#### Como a Plataforma Faz a Ponte
+A plataforma sustenta essa transição ao digitalizar e unificar todo o fluxo de editais e projetos, garantindo:
+- Rastreabilidade integral: cada ação tem timestamp, autor e IP registrados
+- Prazos automáticos: o sistema controla vigência de submissões e notifica vencimentos
+- Divulgação digital de resultados: portal público com dados abertos, eliminando a opacidade
+- Integração entre fases: do rascunho do edital ao encerramento do projeto, tudo no mesmo sistema
 
 ### 3.2 Resumo dos Stakeholders
 
@@ -102,58 +113,55 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 - O sistema deve ter suporte para uso em plataformas mobile.
 - Atualmente, esse processo é realizado de forma fragmentada, com uso de planilhas, e-mails e sistemas desconectados.
 
-<!-- Descrever o ambiente de trabalho dos usuários: número de pessoas, ciclo de tarefas, plataformas, etc. -->
-
 ### 3.5 Perfis dos Stakeholders
 
 #### 3.5.1 Gestor do Edital
 
-- **Representante**: [a definir]
+- **Representante**: Servidor público designado pelo órgão financiador
 - **Descrição**: Servidor público responsável pela criação e gestão de editais
 - **Tipo**: Usuário com conhecimento administrativo, nível técnico básico-intermediário
 - **Responsabilidades**: Criar editais, definir critérios de avaliação, publicar resultados, encerrar submissões
 - **Critérios de Sucesso**: Processo de edital transparente e eficiente, sem retrabalho
 - **Envolvimento**: Requisitos, revisão de artefatos
 - **Entregáveis**: Validação de requisitos de gestão de editais
-- **Comentários/Problemas**: [a definir]
+- **Comentários/Problemas**: Resistência a abandonar planilhas. Necessidade de treinamento para uso do novo sistema.
 
 #### 3.5.2 Proponente de Projeto
 
-- **Representante**: [a definir]
+- **Representante**: Pessoas físicas e jurídicas cadastradas no sistema
 - **Descrição**: Pessoa física ou jurídica que submete propostas a editais
 - **Tipo**: Usuário externo, nível técnico variável
 - **Responsabilidades**: Submeter propostas, acompanhar execução, prestar contas
 - **Critérios de Sucesso**: Facilidade de submissão, acompanhamento transparente
 - **Envolvimento**: Requisitos, testes de usabilidade
 - **Entregáveis**: Feedback sobre usabilidade
-- **Comentários/Problemas**: [a definir]
+- **Comentários/Problemas**: Dificuldade com sistemas digitais se interface for complexa. Precisa de um fluxo guiado e intuitivo.
 
 #### 3.5.3 Avaliador da Proposta
 
-- **Representante**: [a definir]
+- **Representante**: Especialistas designados pelo órgão financiador por área temática
 - **Descrição**: Especialista designado para avaliar propostas submetidas
 - **Tipo**: Usuário com conhecimento no tema do edital
 - **Responsabilidades**: Avaliar propostas, aplicar critérios, emitir parecer
 - **Critérios de Sucesso**: Processo de avaliação claro e rastreável
 - **Envolvimento**: Requisitos, validação de critérios
 - **Entregáveis**: Validação de fluxo de avaliação
-- **Comentários/Problemas**: [a definir]
+- **Comentários/Problemas**: Pode ter vieses se souber a identidade do proponente. O sigilo do avaliador (quando aplicável) deve ser garantido pelo sistema.
 
 #### 3.5.4 Analista de Prestação de Contas
 
-- **Representante**: [a definir]
+- **Representante**: Servidores da controladoria ou área financeira do órgão
 - **Descrição**: Servidor responsável por analisar a prestação de contas dos projetos
 - **Tipo**: Usuário com conhecimento financeiro e administrativo
 - **Responsabilidades**: Verificar documentos, analisar conformidade, emitir parecer final
 - **Critérios de Sucesso**: Conformidade verificável e auditável
 - **Envolvimento**: Requisitos, validação de fluxo de prestação de contas
 - **Entregáveis**: Validação de requisitos de prestação de contas
-- **Comentários/Problemas**: [a definir]
+- **Comentários/Problemas**: Volume de prestações de contas pode ser alto em picos. Necessita de ferramentas de filtro, busca e notificações de prazo.
 
 ### 3.6 Perfis dos Usuários
 
-- Mesmos dos Stakeholders
-<!-- Expandir perfis detalhados de cada tipo de usuário, seguindo a mesma estrutura dos stakeholders -->
+Os perfis de usuários são os mesmos dos Stakeholders (Gestor do Edital, Proponente, Avaliador e Analista de Prestação de Contas), já detalhados na seção 3.5.
 
 ### 3.7 Necessidades Chave dos Stakeholders e Usuários
 
@@ -166,7 +174,14 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 
 ### 3.8 Alternativas e Concorrência
 
-<!-- Descrever alternativas existentes e concorrentes, se houver -->
+Não foram identificados concorrentes diretos no mercado de plataformas de gestão de editais públicos para as áreas esportiva e cultural. As alternativas existentes são:
+
+| Alternativa | Descrição | Limitação |
+|------------|-----------|-----------|
+| Processo atual (planilhas/e-mails) | Método atualmente em uso pelo órgão | Fragmentado, sem rastreabilidade, difícil auditoria |
+| Plataformas genéricas de submissão (Google Forms, JotForm) | Ferramentas de formulário online | Não cobrem o ciclo completo (avaliação, execução, prestação de contas) |
+| Sistemas de outros órgãos | Soluções desenvolvidas sob medida para outros entes | Não são reutilizáveis (contextos jurídicos e de processo distintos) |
+| Soluções comerciais de grant management (Fluxx, Submittable) | Plataformas SaaS internacionais | Custo em dólar, sem conformidade com legislação brasileira, sem suporte a prestação de contas no modelo nacional |
 
 ---
 
@@ -174,9 +189,7 @@ O processo que envolve a gestão dos editais tem a imagem de burocrático e prop
 
 ### 4.1 Perspectiva do Produto
 
-<!-- Descrever como o produto se relaciona com outros sistemas. Incluir diagrama de blocos se possível. -->
-
-O sistema é independente e contido em si próprio, tendo como objetivo exatamente centralizar o processo de gestão de editais.
+O sistema é independente e contido em si próprio, tendo como objetivo centralizar o processo de gestão de editais. No futuro, poderá expor APIs para integração com sistemas de contabilidade e recursos humanos do órgão, mas essas integrações estão fora do escopo da primeira versão e são tratadas como pontos de extensão no Risk R05.
 
 ### 4.2 Resumo das Capacidades
 
@@ -191,15 +204,35 @@ O sistema é independente e contido em si próprio, tendo como objetivo exatamen
 
 ### 4.3 Suposições e Dependências
 
-O sistema requer infraestrutura de servidor para ser hospedado e o usuário final necessita de acesso à internet para usá-lo.
-
-<!-- Listar fatores que podem afetar as funcionalidades -->
+| Suposição/Dependência | Descrição | Impacto se não atendida |
+|----------------------|-----------|------------------------|
+| Infraestrutura de servidor | O sistema requer um servidor para hospedagem | Bloqueante para implantação |
+| Acesso à internet | Usuários finais necessitam de conexão para acessar o sistema | Bloqueante para uso |
+| Apoio institucional do órgão | O órgão deve designar gestores e analistas para operar o sistema | Sem operadores, o sistema fica ocioso |
+| Cadastro de proponentes | Proponentes devem possuir cadastro válido com CPF/CNPJ | Impede submissão de propostas |
+| Designação de avaliadores | O órgão deve prover lista de avaliadores qualificados por área temática | Impede fase de avaliação |
+| Conformidade legal | O sistema depende do alinhamento com a legislação vigente (LGPD, Lei 14.133/2021) | Risco jurídico para o órgão |
+| Ambiente de homologação | Necessário servidor separado para testes antes da publicação de cada release | Risco de regressões em produção |
 
 ### 4.4 Custo e Precificação
 
-- Orçamento máximo: R$ 300.000,00
-- Prazo máximo: 8 meses
-- Sem custos com espaço físico, máquinas ou licenças
+| Item | Valor |
+|------|-------|
+| Orçamento máximo total | R$ 300.000,00 |
+| Prazo máximo | 8 meses |
+| Espaço físico, máquinas, licenças | R$ 0,00 (providos pelo órgão) |
+
+**Distribuição por fase RUP (rateio proporcional):**
+
+| Fase | % do Esforço | Custo Estimado |
+|------|:--:|:--:|
+| Inception | 6% (0.5 meses) | R$ 16.875,00 |
+| Elaboration | 25% (2 meses) | R$ 67.500,00 |
+| Construction | 56% (4.5 meses) | R$ 151.875,00 |
+| Transition | 13% (1 mês) | R$ 33.750,00 |
+| Reserva de Contingência | — | R$ 30.000,00 |
+
+> **Nota**: Os valores são estimativas grosseiras da Inception e devem ser reavaliados no marco LCA da Elaboration.
 
 ---
 
@@ -226,17 +259,37 @@ O sistema requer infraestrutura de servidor para ser hospedado e o usuário fina
 
 ## 6. Restrições
 
-O sistema está sendo pensado e desenvolvido para uso exclusivo do órgão estadual, focado na gestão de editais especificamente das áreas culturais e esportivas, portanto, especificidades de outros tipos de editais não se aplicam.
+### 6.1 Restrições Técnicas
+- O sistema deve ser construído como uma aplicação web, sem dependência de plataformas específicas (Windows/Mac).
+- O backend deve usar tecnologias open source (Python, Java ou Node.js) e banco de dados relacional (PostgreSQL).
+- O frontend deve ser responsivo, compatível com Chrome, Firefox, Edge e Safari (versões dos últimos 2 anos).
+- A comunicação entre frontend e backend deve ser exclusivamente via HTTPS com API REST documentada.
+- O deploy deve ser feito em servidor Linux provido pelo órgão, usando Docker.
 
-<!-- Listar restrições de design, externas ou outras dependências -->
+### 6.2 Restrições Regulatórias
+- Conformidade com a LGPD (Lei 13.709/2018): consentimento para coleta de dados pessoais, anonimização de avaliadores, direito de exclusão.
+- Conformidade com a Lei 14.133/2021 (Licitações): transparência, publicação de resultados, fase recursal.
+- Conformidade com a Lei de Acesso à Informação (12.527/2011): portal de dados abertos com editais e projetos.
+
+### 6.3 Restrições Operacionais
+- Escopo limitado a editais das áreas esportiva e cultural do órgão estadual.
+- Orçamento máximo de R$ 300.000,00, prazo máximo de 8 meses.
+- Time fixo de 7 integrantes, sem possibilidade de contratação adicional.
+- Infraestrutura técnica começa do zero (repositórios, CI/CD, ambientes).
 
 ---
 
 ## 7. Faixas de Qualidade
 
-Devido a natureza do trabalho realizado pelo órgão, o sistema deve permitir a gestão de múltiplos editais simultâneamente, por diferentes usuários, além de milhares de editais diferentes ao todo, em seu banco de dados.
-
-<!-- Definir faixas de qualidade para desempenho, robustez, usabilidade, etc. -->
+| Atributo | Faixa | Medição |
+|---------|-------|---------|
+| **Desempenho** | Tempo de resposta de até 3 segundos para operações CRUD; até 10 segundos para submissão com upload de múltiplos documentos | Medido via APM no servidor |
+| **Disponibilidade** | 99,5% em horário comercial (8h-18h em dias úteis); 97% fora desse horário | Uptime monitorado |
+| **Usabilidade** | Proponentes (público externo, nível técnico variável) devem conseguir submeter uma proposta sem necessidade de treinamento ou manual | Teste de usabilidade com 5 usuários representativos |
+| **Segurança** | Dados trafegados exclusivamente via HTTPS; autenticação com senha e MFA para usuários internos; proteção contra OWASP Top 10 (XSS, CSRF, SQL Injection) | Pen test antes da Transition |
+| **Escalabilidade** | Suporte a múltiplos editais simultâneos e milhares de editais no banco de dados; picos de acesso em datas de encerramento de submissão | Teste de carga simulando 500 usuários simultâneos |
+| **Auditabilidade** | Toda ação de criação, edição, exclusão, avaliação e aprovação deve gerar log imutável com timestamp, usuário e IP | Verificação por amostragem de logs |
+| **Acessibilidade** | Atender critérios WCAG 2.1 Nível AA, garantindo uso por pessoas com deficiência visual e motora | Auditoria com leitor de tela e navegação por teclado |
 
 ---
 
@@ -254,27 +307,51 @@ Devido a natureza do trabalho realizado pelo órgão, o sistema deve permitir a 
 10. Prestação de contas
 11. Emissão de parecer final
 
-<!-- Definir prioridades das funcionalidades -->
-
 ---
 
 ## 9. Outros Requisitos do Produto
 
 ### 9.1 Normas Aplicáveis
 
-<!-- Listar normas legais, regulatórias, de comunicação, etc. -->
+| Norma | Descrição | Impacto no sistema |
+|-------|-----------|-------------------|
+| **LGPD (Lei 13.709/2018)** | Proteção de dados pessoais de proponentes e avaliadores | Consentimento, anonimização de avaliações, direito à exclusão de dados |
+| **Lei 14.133/2021** | Nova Lei de Licitações e Contratos Administrativos | Transparência na divulgação, prazos regimentais, fase recursal |
+| **Lei de Acesso à Informação (Lei 12.527/2011)** | Transparência ativa de dados públicos | Portal de transparência com dados abertos de editais e projetos financiados |
+| **WCAG 2.1 (Nível AA)** | Acessibilidade em sistemas web governamentais | Contraste, navegação por teclado, leitores de tela, texto alternativo |
+| **Resoluções estaduais específicas** | Normas do órgão financiador para cada área temática | Campos customizáveis por tipo de edital |
 
 ### 9.2 Requisitos de Sistema
 
-<!-- Definir sistemas operacionais, plataformas, configurações suportadas -->
+| Requisito | Especificação |
+|----------|---------------|
+| **Sistema operacional do servidor** | Linux (Ubuntu Server 22.04 LTS ou superior) |
+| **Navegadores suportados** | Chrome 90+, Firefox 90+, Edge 90+, Safari 15+ |
+| **Dispositivos** | Desktop (primário), Tablet e Mobile (responsivo) |
+| **Resolução mínima** | 360px de largura (mobile); 1280px (desktop recomendado) |
+| **Stack sugerida** | Backend: Python (FastAPI/Django) ou Java (Spring Boot). Frontend: React ou Vue.js. Banco: PostgreSQL |
+| **Infraestrutura** | Servidor único (início). Possibilidade de escalar para balanceamento de carga se os picos de acesso exigirem |
 
 ### 9.3 Requisitos de Desempenho
 
-<!-- Detalhar questões de desempenho -->
+| Requisito | Alvo | Condição |
+|----------|------|----------|
+| Tempo de carregamento de página | Até 2 segundos | Conexão banda larga (10 Mbps) |
+| Tempo de upload de documentos | Até 30 segundos para arquivo de 10 MB | Conexão banda larga |
+| Processamento de ranking | Até 15 segundos para consolidação de 500 propostas com 3 avaliadores cada | Operação em lote, fora do horário de pico |
+| Geração de relatório de auditoria | Até 10 segundos | Relatório completo de um edital |
+| Concorrência | Suporte a 200 usuários simultâneos sem degradação acima de 20% no tempo de resposta | Pico de encerramento de submissões |
 
 ### 9.4 Requisitos Ambientais
 
-<!-- Condições de uso, recursos disponíveis, manutenção -->
+| Requisito | Descrição |
+|----------|-----------|
+| **Ambiente de desenvolvimento** | Máquinas locais dos desenvolvedores, com Docker para uniformização |
+| **Ambiente de homologação** | Servidor separado, réplica reduzida de produção, para validação pré-release |
+| **Ambiente de produção** | Servidor único gerenciado pelo órgão, com acesso restrito via SSH |
+| **Backup** | Backup diário do banco de dados, retenção de 30 dias |
+| **Manutenção** | Janela de manutenção programada: domingos 0h-6h, com aviso prévio de 48h aos usuários |
+| **Monitoramento** | Logs centralizados, alertas de erro 5xx e downtime via e-mail para o time de sustentação |
 
 ---
 
@@ -282,19 +359,19 @@ Devido a natureza do trabalho realizado pelo órgão, o sistema deve permitir a 
 
 ### 10.1 Manual do Usuário
 
-<!-- Descrever propósito e conteúdo do manual -->
+O sistema deve oferecer um manual do usuário em PDF, separado por perfil (Gestor, Proponente, Avaliador e Analista). O manual deve conter capturas de tela e descrever o passo a passo para cada fluxo principal. Deve ser entregue junto com a versão final, na fase de Transition.
 
 ### 10.2 Ajuda Online
 
-<!-- Endereçar sistema de ajuda online -->
+Tooltips contextuais em campos de formulário (ex: "Descreva o objetivo geral do projeto em até 500 caracteres"). Link "Central de Ajuda" no rodapé com FAQ pesquisável, cobrindo dúvidas frequentes de proponentes (como anexar documentos, prazos, requisitos de formatação).
 
 ### 10.3 Guias de Instalação e Configuração
 
-<!-- Instruções de instalação e configuração -->
+Readme no repositório com instruções para setup do ambiente de desenvolvimento (Docker Compose). Guia de deploy em produção com checklist de pré-requisitos (servidor Linux, PostgreSQL instalado, certificado SSL ativo, variáveis de ambiente configuradas).
 
 ### 10.4 Rotulagem e Empacotamento
 
-<!-- Definir necessidades de rotulagem -->
+O sistema será distribuído como imagem Docker (backend) e bundle estático (frontend), versionados semânticamente (MAJOR.MINOR.PATCH). A página de login deve exibir o nome do sistema ("Plataforma de Gestão de Editais Públicos"), o brasão do órgão e a versão corrente no rodapé.
 
 ---
 
@@ -322,13 +399,16 @@ Devido a natureza do trabalho realizado pelo órgão, o sistema deve permitir a 
 
 ## Apêndice A. Atributos de Funcionalidades
 
-| Atributo | Descrição |
-|----------|-----------|
-| **Status** | Proposed / Approved / Incorporated |
-| **Benefit** | Critical / Important / Useful |
-| **Effort** | Estimativa de esforço (pessoas-semana) |
-| **Risk** | High / Medium / Low |
-| **Stability** | Probabilidade de mudança |
-| **Target Release** | Versão pretendida para a funcionalidade |
-| **Assigned To** | Equipe responsável |
-| **Reason** | Origem da solicitação |
+| Funcionalidade | Status | Benefit | Effort (pessoas-semana) | Risk | Stability | Target Release | Assigned To | Reason |
+|---------------|--------|---------|------------------------|------|-----------|---------------|-------------|--------|
+| FE01 - Criação e configuração de editais | Proposed | Critical | 4 | Medium | Stable | V1.0 | Equipe | Enunciado |
+| FE02 - Definição de critérios de avaliação | Proposed | Critical | 3 | Low | Stable | V1.0 | Equipe | Enunciado |
+| FE03 - Submissão e análise de recursos | Proposed | Important | 4 | Medium | Medium | V1.0 | Equipe | Enunciado |
+| FE04 - Publicação de editais | Proposed | Critical | 1 | Low | Stable | V1.0 | Equipe | Enunciado |
+| FE05 - Encerramento de submissões | Proposed | Important | 1 | Low | Stable | V1.0 | Equipe | Enunciado |
+| FE06 - Divulgação de resultados | Proposed | Critical | 2 | Low | Stable | V1.0 | Equipe | Enunciado |
+| FP01 - Submissão de propostas | Proposed | Critical | 6 | Medium | Medium | V1.0 | Equipe | Enunciado |
+| FP02 - Avaliação e seleção | Proposed | Critical | 5 | Medium | Medium | V1.0 | Equipe | Enunciado |
+| FP03 - Acompanhamento da execução | Proposed | Important | 4 | Medium | High | V1.0 | Equipe | Enunciado |
+| FP04 - Prestação de contas | Proposed | Important | 5 | High | High | V1.0 | Equipe | Enunciado |
+| FP05 - Emissão de parecer final | Proposed | Important | 2 | Low | Medium | V1.0 | Equipe | Enunciado |

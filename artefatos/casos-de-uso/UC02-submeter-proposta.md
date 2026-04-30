@@ -142,4 +142,36 @@ O Proponente define as etapas do projeto com prazos e marcos de entrega.
 
 ## 10. Informações Adicionais
 
-<!-- Incluir diagramas ou exemplos, se necessário -->
+### 10.1 Diagrama de Atividade
+
+```mermaid
+flowchart TD
+    A([Início]) --> B[Proponente acessa editais abertos]
+    B --> C{Proponente já tem proposta\nneste edital?}
+    C -->|Sim| D[Sistema informa e pergunta se quer editar]
+    D -->|Sim| E[Carrega proposta existente]
+    E --> F
+    D -->|Não| B
+    C -->|Não| F[Proponente seleciona edital]
+    F --> G{Prazo de submissão\nexpirado?}
+    G -->|Sim| H[Sistema informa encerramento]
+    H --> I([Fim])
+    G -->|Não| J[Sistema exibe formulário de proposta]
+    J --> K[Proponente preenche dados do projeto]
+    K --> L[Proponente preenche orçamento e cronograma]
+    L --> M[Proponente anexa documentos exigidos]
+    M --> N[Proponente revisa proposta]
+
+    K -->|Salvar rascunho| O[Sistema salva como Rascunho]
+    O --> I
+
+    N --> P{Sistema valida\nconformidade}
+    P -->|Documento obrigatório faltando| Q[Exibe alerta: documentos pendentes]
+    Q --> M
+    P -->|Não atende requisitos mínimos| R[Exibe alerta: requisitos não atendidos]
+    R --> K
+    P -->|Conforme| S[Proponente confirma submissão]
+    S --> T[Sistema registra como Submetido]
+    T --> U[Sistema envia confirmação com protocolo]
+    U --> I
+```

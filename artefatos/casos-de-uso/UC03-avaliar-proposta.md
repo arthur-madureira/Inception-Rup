@@ -147,4 +147,38 @@ Após todas as avaliações individuais, o sistema consolida as pontuações e g
 
 ## 10. Informações Adicionais
 
-<!-- Incluir diagramas ou exemplos, se necessário -->
+### 10.1 Diagrama de Atividade
+
+```mermaid
+flowchart TD
+    A([Início]) --> B[Avaliador acessa lista de propostas atribuídas]
+    B --> C[Sistema exibe propostas pendentes]
+    C --> D[Avaliador seleciona uma proposta]
+    D --> E{Proposta está em triagem?}
+    E -->|Sim| F[Sistema informa indisponibilidade]
+    F --> C
+    E -->|Não| G[Avaliador verifica conflito de interesses]
+    G -->|Declara conflito| H[Sistema registra conflito e reatribui proposta]
+    H --> I([Fim])
+    G -->|Sem conflito| J[Sistema exibe dados completos da proposta]
+    J --> K[Avaliador analisa documentos, cronograma e orçamento]
+    K --> L{Precisa de mais\ninformações?}
+    L -->|Sim| M[Sistema envia solicitação ao Proponente]
+    M --> N[Caso de uso suspenso até resposta]
+    N --> K
+    L -->|Não| O[Avaliador preenche ficha de avaliação]
+    O --> P[Avaliador pontua cada critério com justificativa]
+    P --> Q[Avaliador emite parecer]
+    Q --> R{Sistema valida:\ntodos os critérios pontuados?}
+    R -->|Não| S[Exibe alerta: critérios pendentes]
+    S --> O
+    R -->|Sim| T[Sistema registra avaliação]
+    T --> U[Sistema atualiza status da proposta]
+    U --> V{Divergência significativa\nentre avaliadores?}
+    V -->|Sim| W[Sinaliza ao Gestor para terceira avaliação]
+    V -->|Não| X[Notifica Gestor do Edital]
+    X --> I
+
+    O -->|Salvar parcial| Y[Sistema salva progresso]
+    Y --> I
+```
